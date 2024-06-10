@@ -46,7 +46,7 @@ const changePage = async (page: number) => {
   <div v-else>
   <FilterItem @applyFilter="applyFilter($event)" />
   <section class="list">
-    <div class="card" v-for="(item, index) in list">
+    <div class="card" v-for="item in list">
       <div class="card-img">
         <img :src="item.image">
       </div>
